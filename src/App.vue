@@ -21,12 +21,17 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,500,600,700,900');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:200,300,400,500,600,700,900');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:200,300,400,500,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lora:200,300,400,500,600,700,900');
 
 body {
-  font-family: 'Roboto Slab', 'Noto Serif SC';
+  font-size: 14px;
+  font-family: 'Lora', 'Noto Serif SC';
   h {
     font-family: 'Noto Sans SC';
+  }
+
+  a {
+    color: inherit;
   }
 }
 </style>
