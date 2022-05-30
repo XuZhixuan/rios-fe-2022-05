@@ -1,11 +1,17 @@
 <template>
   <div class="main-nav sticky-nav">
     <b-container>
-      <b-navbar>
+      <b-navbar toggleable="lg">
         <b-navbar-brand href="/">
           <img src="@/assets/logos/logo.png" alt="RIOS-Lab" />
         </b-navbar-brand>
-        <b-collapse id="headerNav" is-nav>
+        <b-navbar-toggle class="ml-auto" target="header-nav">
+          <template #default="{ expanded }">
+            <font-awesome-icon v-if="expanded" icon="angle-up" />
+            <font-awesome-icon v-else icon="angle-down" />
+          </template>
+        </b-navbar-toggle>
+        <b-collapse id="header-nav" is-nav>
           <b-navbar-nav class="m-auto">
             <b-nav-item href="/">实验室概况</b-nav-item>
             <b-nav-item href="/">教育教学</b-nav-item>
@@ -33,7 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  max-width: 100%;
+  max-width: 12rem;
 }
 
 // .sticky-nav {
