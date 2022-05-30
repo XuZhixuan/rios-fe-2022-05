@@ -4,5 +4,9 @@ export default [
   {
     path: '/',
     component: Home
+  },
+  {
+    path: '/team',
+    component: () => import('@/views/TeamView')
   }
 ];
