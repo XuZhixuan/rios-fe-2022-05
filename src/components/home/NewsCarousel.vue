@@ -1,8 +1,13 @@
 <template>
   <div>
-    <b-carousel id="news-carousel" controls indicators img-height="60rem" img-width="100%">
-      <b-carousel-slide v-for="msg in news" :key="msg.id" :img-src="msg.img">
-        <h1>{{ msg.title }}</h1>
+    <b-carousel id="news-carousel" controls indicators img-height="30rem" img-width="100%">
+      <b-carousel-slide v-for="msg in news" :key="msg.id">
+        <template #img>
+          <div class="carousel-img" :style="'background: url(' + msg.img + '); background-size: cover;'">
+            <!-- <img :src="msg.img" /> -->
+          </div>
+        </template>
+        <h5>{{ msg.title }}</h5>
         <p>{{ msg.detail }}</p>
         <b-button variant="outline-light" :href="msg.link">{{ msg.linkName }}</b-button>
       </b-carousel-slide>
@@ -26,7 +31,7 @@ export default {
         },
         {
           id: 1,
-          img: 'https://rioslab.org/files/image/20200415/20200415101412_98915.png',
+          img: 'https://rioslab.org/files/image/20200508/20200508093828_68679.png',
           title: 'Another title',
           detail: 'Some detailed information here...',
           linkName: '查看详情',
@@ -35,7 +40,7 @@ export default {
         {
           id: 2,
           img: 'https://rioslab.org/files/image/20200427/20200427211729_44757.png',
-          title: 'Yet Another title',
+          title: 'Yet another title',
           detail: 'Some detailed information here...',
           linkName: '立即加入',
           link: '/'
@@ -45,3 +50,15 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+img {
+  position: relative;
+}
+
+.carousel-img {
+  height: 32rem;
+  overflow: hidden;
+  background-size: contain;
+}
+</style>
