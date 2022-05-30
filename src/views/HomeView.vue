@@ -1,11 +1,16 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <news-carousel />
   </div>
 </template>
 
 <script>
+import NewsCarousel from '@/components/home/NewsCarousel';
+
 export default {
-  name: 'HomeView'
+  name: 'HomeView',
+  components: {
+    NewsCarousel
+  }
 };
 </script>

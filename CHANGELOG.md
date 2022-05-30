@@ -1,4 +1,5 @@
 # Changelog
+
 Change history of RIOS-Lab Homepage frontend projec.
 
 ## [Unreleased]
@@ -6,6 +7,7 @@ Change history of RIOS-Lab Homepage frontend projec.
 ## [0.1.0] - 2022-05-30
 
 ### Added
+
 - Changelog file
 - MIT License
 - Editor config file
@@ -13,6 +15,7 @@ Change history of RIOS-Lab Homepage frontend projec.
 - Bootstrap-vue UI library
 
 ### Changed
+
 - Separate routes defination file to `/src/router/routes.js`
 - Remove useless init files
 - RIOS Logo & favicon
@@ -20,4 +23,5 @@ Change history of RIOS-Lab Homepage frontend projec.
 ## [0.0.0] - 2022-05-28
 
 ### Added
+
 - Initialize project with Vue.js
