@@ -3,7 +3,10 @@
     <b-carousel id="news-carousel" controls indicators img-height="30rem" img-width="100%">
       <b-carousel-slide v-for="msg in news" :key="msg.id">
         <template #img>
-          <div class="carousel-img" :style="'background: url(' + msg.img + '); background-size: cover;'">
+          <div
+            class="carousel-img"
+            :style="'background: url(' + msg.img + '); background-size: cover; background-position: center'"
+          >
             <!-- <img :src="msg.img" /> -->
           </div>
         </template>
@@ -52,13 +55,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-  position: relative;
-}
-
 .carousel-img {
   height: 32rem;
-  overflow: hidden;
-  background-size: contain;
 }
 </style>
