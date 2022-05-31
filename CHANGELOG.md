@@ -4,6 +4,16 @@ Change history of RIOS-Lab Homepage frontend projec.
 
 ## [Unreleased]
 
+## [0.1.1] - 2022-05-30
+
+### Added
+- HomeView & components
+- TeamView & components
+- Header & Footer components
+- Logos for THU & UCB
+- Some temp pics for test
+- Fontawesome library
+
 ## [0.1.0] - 2022-05-30
 
 ### Added
