@@ -1,4 +1,5 @@
 import Home from '@/views/HomeView';
+import Team from '@/views/TeamView';
 
 export default [
   {
@@ -7,11 +8,17 @@ export default [
   },
   {
     path: '/team',
-    component: () => import('@/views/team/TeamList')
-  },
-  {
-    path: '/team/:id',
-    component: () => import('@/views/team/TeacherShow'),
-    props: true
+    component: Team,
+    children: [
+      {
+        path: '',
+        component: () => import('@/views/team/TeamList')
+      },
+      {
+        path: ':id',
+        component: () => import('@/views/team/TeacherShow'),
+        props: true
+      }
+    ]
   }
 ];

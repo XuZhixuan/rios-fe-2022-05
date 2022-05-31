@@ -6,7 +6,7 @@
       </b-col>
       <b-col md="8" align-self="center">
         <b-card-body :title="name">
-          <b-card-sub-title style="font-weight: bold"> {{ info.level }} </b-card-sub-title>
+          <b-card-sub-title style="font-weight: bold"> {{ info.position }} </b-card-sub-title>
           <b-card-text align="justify"> {{ info.brief }} </b-card-text>
           <b-card-sub-title>研究方向</b-card-sub-title>
           <b-card-text> {{ info.research }} </b-card-text>
