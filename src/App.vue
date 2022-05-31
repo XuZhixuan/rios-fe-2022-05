@@ -3,6 +3,8 @@
     <header-nav />
     <router-view />
     <hr />
+    <h5 style="text-align: center"><font-awesome-icon icon="paint-roller" /> Constructing...</h5>
+    <hr />
     <footer-nav />
   </div>
 </template>
@@ -27,7 +29,7 @@ export default {
 body {
   font-size: 14px;
   font-family: 'Lora', 'Noto Serif SC';
-  h {
+  h1 h2 h3 h4 h5 h6 {
     font-family: 'Noto Sans SC';
   }
 

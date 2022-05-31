@@ -1,6 +1,13 @@
 <template>
   <div class="team">
     <teach-nav />
+    <div class="banner">
+      <b-container>
+        <h5>实验室教授与专家</h5>
+        <p>我们是专业团队</p>
+        <b-button pill variant="outline-light">爱去哪去哪</b-button>
+      </b-container>
+    </div>
     <b-container>
       <tech-card
         class="teacher-card"
@@ -18,13 +25,11 @@
 </template>
 
 <script>
-import TeachNav from '@/components/team/TeachNav';
 import TechCard from '@/components/team/TeacherIntro';
 
 export default {
   name: 'TeamList',
   components: {
-    TeachNav,
     TechCard
   },
   data() {
@@ -78,5 +83,12 @@ export default {
 <style lang="scss" scoped>
 .teacher-card {
   margin: 1rem 0;
+}
+
+.banner {
+  background: rgb(102, 8, 116);
+  padding: 5rem 0;
+  color: #fff;
+  text-align: center;
 }
 </style>

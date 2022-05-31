@@ -1,17 +1,13 @@
 <template>
-  <b-card>
+  <b-card no-body>
     <b-row>
-      <b-col cols="4">
+      <b-col md="4">
         <b-card-img :src="img" alt="Image" style="width: 100%"></b-card-img>
       </b-col>
-      <b-col cols="8" align-self="center">
+      <b-col md="8" align-self="center">
         <b-card-body :title="name">
           <b-card-sub-title style="font-weight: bold"> {{ info.level }} </b-card-sub-title>
-          <b-card-text></b-card-text>
-          <b-card-sub-title>基本信息</b-card-sub-title>
-          <b-card-text align="justify">
-            {{ info.brief }}
-          </b-card-text>
+          <b-card-text align="justify"> {{ info.brief }} </b-card-text>
           <b-card-sub-title>研究方向</b-card-sub-title>
           <b-card-text> {{ info.research }} </b-card-text>
           <b-card-sub-title>联系方式</b-card-sub-title>

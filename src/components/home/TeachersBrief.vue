@@ -61,7 +61,10 @@ export default {
 <style lang="scss" scoped>
 .brief-area {
   padding: 5rem 0;
-  background-color: #070b3b;
+  background: url('@/assets/pictures/shape1.png') no-repeat, #070b3b;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: auto 60%;
   color: #fff;
   text-align: center;
 }

@@ -3,13 +3,16 @@ import Vue from 'vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-import { faHouse, faEnvelope, faAngleRight, faAngleUp, faAngleDown, faLink } from '@fortawesome/free-solid-svg-icons';
+import {
+  faHouse,
+  faEnvelope,
+  faAngleUp,
+  faAngleDown,
+  faAngleRight,
+  faLink,
+  faPaintRoller
+} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faHouse);
-library.add(faEnvelope);
-library.add(faAngleRight);
-library.add(faAngleUp);
-library.add(faAngleDown);
-library.add(faLink);
+library.add([faHouse, faEnvelope, faAngleUp, faAngleDown, faAngleRight, faLink, faPaintRoller]);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);

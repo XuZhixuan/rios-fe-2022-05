@@ -19,7 +19,7 @@
         </b-col>
         <b-col lg>
           <div class="pic">
-            <b-img src="@/assets/pictures/temp_intro.png" fluid></b-img>
+            <b-img rounded src="@/assets/pictures/temp_intro.png" fluid></b-img>
           </div>
         </b-col>
       </b-row>
@@ -38,7 +38,7 @@ export default {
   margin: 5rem 0;
 }
 .seal {
-  height: 10rem;
+  height: 8rem;
 }
 .pic {
   margin-top: 2rem;
