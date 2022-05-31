@@ -7,7 +7,7 @@ export default [
   },
   {
     path: '/team',
-    component: () => import('@/views/TeamList')
+    component: () => import('@/views/team/TeamList')
   },
   {
     path: '/team/:id',

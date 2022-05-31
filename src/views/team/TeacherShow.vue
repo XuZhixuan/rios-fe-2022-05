@@ -1,12 +1,18 @@
 <template>
   <b-container>
-    <p>Detailed info of Teacher ID: {{ id }} component Here</p>
+    <teacher-detail :id="id" />
   </b-container>
 </template>
 
 <script>
+import TeacherDetail from '@/components/team/TeacherDetail';
+
 export default {
+  components: { TeacherDetail },
   name: 'TeacherShow',
-  props: ['id']
+  props: ['id'],
+  component: {
+    TeacherDetail
+  }
 };
 </script>

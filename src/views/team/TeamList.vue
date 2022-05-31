@@ -5,7 +5,7 @@
       <b-container>
         <h5>实验室教授与专家</h5>
         <p>我们是专业团队</p>
-        <b-button pill variant="outline-light">爱去哪去哪</b-button>
+        <b-button pill variant="outline-light">测试</b-button>
       </b-container>
     </div>
     <b-container>
@@ -72,7 +72,7 @@ export default {
             research: '集成电路设计，EDA,AI芯片'
           },
           email: 'test',
-          link: ' test'
+          link: 'test'
         }
       ]
     };
