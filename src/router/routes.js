@@ -7,6 +7,6 @@ export default [
   },
   {
     path: '/team',
-    component: () => import('@/views/TeamView')
+    component: () => import('@/views/TeamList')
   }
 ];

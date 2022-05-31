@@ -2,11 +2,22 @@
 
 Change history of RIOS-Lab Homepage frontend projec.
 
-## [Unreleased]
+## [Unreleased]]
+
+## [0.1.2] - 2022-05-31
+
+### Added
+
+- TeachNav
+
+### Changed
+
+- Rename TeamView to TeamList
 
 ## [0.1.1] - 2022-05-30
 
 ### Added
+
 - HomeView & components
 - TeamView & components
 - Header & Footer components
