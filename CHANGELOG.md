@@ -8,11 +8,15 @@ Change history of RIOS-Lab Homepage frontend projec.
 
 ### Added
 
-- TeachNav
+- Teacher List view
+- Homepage video player
+- More homepage backgrounds
 
 ### Changed
 
 - Rename TeamView to TeamList
+- Make Teacher intro card responsive
+- Upgrade dependencies
 
 ## [0.1.1] - 2022-05-30
 
