@@ -4,7 +4,6 @@
       <b-container>
         <h5>实验室教授与专家</h5>
         <p>我们是专业团队</p>
-        <b-button pill variant="outline-light">测试</b-button>
       </b-container>
     </div>
     <router-view />

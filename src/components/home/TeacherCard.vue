@@ -3,7 +3,7 @@
     <b-card-text>
       {{ detail }}
     </b-card-text>
-    <b-button variant="outline-light" href="#"> 详细了解 </b-button>
+    <b-button variant="outline-light" :to="'/team/' + id"> 详细了解 </b-button>
   </b-card>
 </template>
 

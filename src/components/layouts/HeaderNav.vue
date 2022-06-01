@@ -14,7 +14,7 @@
         <b-collapse id="header-nav" is-nav>
           <b-navbar-nav class="m-auto">
             <b-nav-item href="/">实验室概况</b-nav-item>
-            <b-nav-item to="teamgit">教育教学</b-nav-item>
+            <b-nav-item to="team">教育教学</b-nav-item>
             <b-nav-item href="/">科学研究</b-nav-item>
             <b-nav-item href="/">招生就业</b-nav-item>
             <b-nav-item href="/">合作交流</b-nav-item>

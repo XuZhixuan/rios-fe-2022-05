@@ -10,6 +10,10 @@ Change history of RIOS-Lab Homepage frontend projec.
 
 - Sponsors component
 
+### Changed
+
+- Remove button on specilist index banner
+
 ## [0.1.2] - 2022-05-31
 
 ### Added

@@ -29,9 +29,9 @@ export default {
     return {
       teachers: [
         {
-          name: '谭章熹',
-          img: 'https://rioslab.org/files/image/20200512/20200512172047_60250.png',
-          detail: '实验室常任主任兼委员会主席',
+          name: '大卫·帕特森',
+          img: 'https://2018.wicwuzhen.cn/web18/news/speeches/201811/W020181107396809372839.png',
+          detail: '实验室主任',
           id: 0
         },
         {
