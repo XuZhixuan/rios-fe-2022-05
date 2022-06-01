@@ -2,7 +2,13 @@
 
 Change history of RIOS-Lab Homepage frontend projec.
 
-## [Unreleased]]
+## [Unreleased]
+
+## [0.1.3] - 2022-06-01
+
+### Added
+
+- Sponsors component
 
 ## [0.1.2] - 2022-05-31
 
