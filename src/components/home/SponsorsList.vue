@@ -1,7 +1,7 @@
 <template>
   <div class="sponsor-area">
     <b-container>
-      <h5 style="text-align: center">我们的合作伙伴遍布全球</h5>
+      <h5 style="text-align: center">{{ $t('home.sponsor.title') }}</h5>
       <b-row>
         <b-col md="3" v-for="sponsor in sponsors" :key="sponsor.id">
           <b-img :src="sponsor.logo" style="width: 100%" />

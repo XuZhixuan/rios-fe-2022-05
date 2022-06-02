@@ -9,20 +9,20 @@
         <h6>{{ info.position }}</h6>
         <hr />
         <p>{{ info.brief }}</p>
-        <h6>研究方向</h6>
+        <h6>{{ $t('team.detail.research') }}</h6>
         <p>{{ info.research }}</p>
-        <h6>教育经历</h6>
+        <h6>{{ $t('team.detail.education') }}</h6>
         <ul class="edu-list">
           <li v-for="edu in education" :key="edu.id">{{ edu.content }}</li>
         </ul>
-        <h6>联系信息</h6>
+        <h6>{{ $t('team.detail.contact') }}</h6>
         <font-awesome-icon icon="envelope" /> <a :href="'mailto:' + email">Mailto:{{ email }}</a>
         <br />
         <font-awesome-icon icon="link" /> <a :href="link">{{ link }}</a>
       </b-col>
     </b-row>
     <div class="pubs">
-      <h5>研究成果</h5>
+      <h5>{{ $t('team.detail.pubs') }}</h5>
       <b-list-group flush>
         <b-list-group-item v-for="pub in pubs" :key="pub.id">
           <span v-html="pub.content"></span>
@@ -30,7 +30,7 @@
       </b-list-group>
     </div>
     <div class="awards">
-      <h5>获得奖项</h5>
+      <h5>{{ $t('team.detail.awards') }}</h5>
       <span v-html="awards"></span>
     </div>
   </div>

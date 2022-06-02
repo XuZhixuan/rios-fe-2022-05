@@ -1,8 +1,8 @@
 <template>
   <div class="brief-area">
     <b-container>
-      <h5>专家教授</h5>
-      <p>我们拥有丰富的师资力量</p>
+      <h5>{{ $t('home.team.title') }}</h5>
+      <p>{{ $t('home.team.content') }}</p>
       <b-card-group deck>
         <teacher-card
           v-for="teacher in teachers"

@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "intro": "实验室概况",
+    "education": "教育教学",
+    "research": "科学研究",
+    "admission": "招生就业",
+    "cooperate": "合作交流",
+    "lang": "语言"
+  },
+  "footer": {
+    "sitemap": {
+      "title": "网站地图",
+      "team": "团队",
+      "blog": "博客",
+      "platform": "开放平台",
+      "documents": "文档",
+      "download": "下载"
+    },
+    "contact": {
+      "title": "联系方式",
+      "address1": "清华伯克利深圳学院，中国深圳市南山区西丽南山智园 C3 栋，邮编 518055",
+      "address2": "美国加利福尼亚州圣克拉拉市邦克希尔巷 2933 号 205 室，邮编 95054"
+    }
+  },
+  "home": {
+    "intro": {
+      "title": "RISC-V 国际开源实验室",
+      "content": "RISC-V 国际开源实验室 (RIOS实验室) 创立于2019年。作为清华-伯克利深圳研究院不可或缺的组成部分，RIOS踏上创新之路，把加州大学伯克利分校研发的RISC-V开源指令集CPU及其软硬件生态体系延伸到世界各地。肩负RISC-V基金会主要成员的使命，我们旨在帮助开发者缩短设计时间和降低芯片成本从而展示对开源平台的承诺。"
+    },
+    "team": {
+      "title": "专家教授",
+      "content": "我们拥有丰富的师资力量"
+    },
+    "video": {
+      "title": "点击就送！",
+      "subtitle": "我们正在寻找你",
+      "button": "点击就送"
+    },
+    "sponsor": {
+      "title": "我们的合作伙伴遍布全球"
+    }
+  },
+  "team": {
+    "title": "实验室教授与专家",
+    "subtitle": "我们是专业团队",
+    "list": {
+      "research": "研究方向"
+    },
+    "detail": {
+      "research": "研究方向",
+      "education": "教育经历",
+      "contact": "联系信息",
+      "pubs": "研究成果",
+      "awards": "奖励奖项"
+    }
+  }
+}

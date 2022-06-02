@@ -2,8 +2,8 @@
   <div>
     <div class="banner">
       <b-container>
-        <h5>实验室教授与专家</h5>
-        <p>我们是专业团队</p>
+        <h5>{{ $t('team.title') }}</h5>
+        <p>{{ $t('team.subtitle') }}</p>
       </b-container>
     </div>
     <router-view />

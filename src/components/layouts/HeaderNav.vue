@@ -13,16 +13,16 @@
         </b-navbar-toggle>
         <b-collapse id="header-nav" is-nav>
           <b-navbar-nav class="m-auto">
-            <b-nav-item href="/">实验室概况</b-nav-item>
-            <b-nav-item to="team">教育教学</b-nav-item>
-            <b-nav-item href="/">科学研究</b-nav-item>
-            <b-nav-item href="/">招生就业</b-nav-item>
-            <b-nav-item href="/">合作交流</b-nav-item>
+            <b-nav-item href="/">{{ $t('navbar.intro') }}</b-nav-item>
+            <b-nav-item to="team">{{ $t('navbar.education') }}</b-nav-item>
+            <b-nav-item href="/">{{ $t('navbar.research') }}</b-nav-item>
+            <b-nav-item href="/">{{ $t('navbar.admission') }}</b-nav-item>
+            <b-nav-item href="/">{{ $t('navbar.cooperate') }}</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item-dropdown text="语言" right>
-              <b-dropdown-item href="#">中文-简体</b-dropdown-item>
-              <b-dropdown-item href="#">English</b-dropdown-item>
+            <b-nav-item-dropdown :text="$t('navbar.lang')" right>
+              <b-dropdown-item @click="changeLocale('ZH')">中文-简体</b-dropdown-item>
+              <b-dropdown-item @click="changeLocale('EN')">English</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>
@@ -33,7 +33,12 @@
 
 <script>
 export default {
-  name: 'HeaderNav'
+  name: 'HeaderNav',
+  methods: {
+    changeLocale(locale) {
+      this.$root.$i18n.locale = locale;
+    }
+  }
 };
 </script>
 
@@ -41,13 +46,6 @@ export default {
 img {
   max-width: 12rem;
 }
-
-// .sticky-nav {
-//   top: 0;
-//   border: 0;
-//   position: fixed;
-// }
-
 .main-nav {
   width: 100%;
   height: auto;

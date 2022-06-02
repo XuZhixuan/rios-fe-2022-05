@@ -3,11 +3,11 @@
     <b-container>
       <b-row align-v="center">
         <b-col>
-          <p>我们正在寻找你</p>
-          <h3>点击就送！</h3>
+          <p>{{ $t('home.video.subtitle') }}</p>
+          <h3>{{ $t('home.video.title') }}</h3>
         </b-col>
         <b-col style="text-align: right">
-          <b-button pill variant="outline-light">点击就送</b-button>
+          <b-button pill variant="outline-light">{{ $t('home.video.button') }}</b-button>
         </b-col>
       </b-row>
       <b-embed type="video" aspect="16by9" controls>

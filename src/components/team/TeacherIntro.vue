@@ -8,16 +8,8 @@
         <b-card-body :title="name">
           <b-card-sub-title style="font-weight: bold"> {{ info.position }} </b-card-sub-title>
           <b-card-text align="justify"> {{ info.brief }} </b-card-text>
-          <b-card-sub-title>研究方向</b-card-sub-title>
+          <b-card-sub-title>{{ $t('team.list.research') }}</b-card-sub-title>
           <b-card-text> {{ info.research }} </b-card-text>
-          <b-card-sub-title>联系方式</b-card-sub-title>
-          <b-card-text>
-            <a :href="'mailto:' + email"><font-awesome-icon icon="envelope" /> {{ email }}</a>
-          </b-card-text>
-          <b-card-sub-title>个人主页</b-card-sub-title>
-          <b-card-text>
-            <a :href="link"><font-awesome-icon icon="link" /> {{ link }}</a>
-          </b-card-text>
         </b-card-body>
       </b-col>
     </b-row>
@@ -31,8 +23,6 @@ export default {
     name: String,
     info: Object,
     img: String,
-    email: String,
-    link: String,
     id: Number
   }
 };

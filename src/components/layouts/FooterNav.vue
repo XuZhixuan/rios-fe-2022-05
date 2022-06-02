@@ -4,29 +4,29 @@
       <b-row>
         <b-col align-self="center" class="blacking" xl><img src="@/assets/logos/logo2.png" alt="" /></b-col>
         <b-col class="blacking" md>
-          <h5>网站地图</h5>
+          <h5>{{ $t('footer.sitemap.title') }}</h5>
           <ul class="unstyle">
             <li>
-              <a href="/"><font-awesome-icon icon="angle-right" /> 团队</a>
+              <a href="/"><font-awesome-icon icon="angle-right" /> {{ $t('footer.sitemap.team') }}</a>
             </li>
             <li>
-              <a href="/"><font-awesome-icon icon="angle-right" /> 博客</a>
+              <a href="/"><font-awesome-icon icon="angle-right" /> {{ $t('footer.sitemap.blog') }}</a>
             </li>
             <li>
-              <a href="/"><font-awesome-icon icon="angle-right" /> 开放平台</a>
+              <a href="/"><font-awesome-icon icon="angle-right" /> {{ $t('footer.sitemap.platform') }}</a>
             </li>
             <li>
-              <a href="/"><font-awesome-icon icon="angle-right" /> 文档</a>
+              <a href="/"><font-awesome-icon icon="angle-right" /> {{ $t('footer.sitemap.documents') }}</a>
             </li>
             <li>
-              <a href="/"><font-awesome-icon icon="angle-right" /> 下载</a>
+              <a href="/"><font-awesome-icon icon="angle-right" /> {{ $t('footer.sitemap.download') }}</a>
             </li>
           </ul>
         </b-col>
         <b-col class="blacking" lg>
-          <h5>联系方式</h5>
-          <p><font-awesome-icon icon="house" /> 清华伯克利深圳学院，中国深圳市南山区西丽南山智园C3栋，邮编518055</p>
-          <p><font-awesome-icon icon="house" /> 美国加利福尼亚州圣克拉拉市邦克希尔巷2933号205室，邮编95054</p>
+          <h5>{{ $t('footer.contact.title') }}</h5>
+          <p><font-awesome-icon icon="house" /> {{ $t('footer.contact.address1') }}</p>
+          <p><font-awesome-icon icon="house" /> {{ $t('footer.contact.address2') }}</p>
           <p><font-awesome-icon icon="envelope" /> <a href="mailto:info@rioslab.org">mailto:info@rioslab.org</a></p>
         </b-col>
       </b-row>

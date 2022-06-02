@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "intro": "Lab Overview",
+    "education": "Education",
+    "research": "Research",
+    "admission": "Admission",
+    "cooperate": "Coperation",
+    "lang": "Lang"
+  },
+  "footer": {
+    "sitemap": {
+      "title": "Sitemap",
+      "team": "Team",
+      "blog": "Blog",
+      "platform": "Open Platform",
+      "documents": "Documentations",
+      "download": "Downloads"
+    },
+    "contact": {
+      "title": "Contact",
+      "address1": "C3, Nanshan Intelligence IndustrialPark, Xili, Nanshan, Shenzhen, 518055, P. R. China.",
+      "address2": "2933 Bunker Hill Lane, Suite 205 Santa Clara, CA 95054, USA"
+    }
+  },
+  "home": {
+    "intro": {
+      "title": "RISC-V International Open Source Lab",
+      "content": "Founded in 2019 as part of Tsinghua-Berkeley Shenzhen Institute (TBSI), the RISC-V International Open Source Laboratory (RIOS Lab) began its journey of bringing the research effort of RISC-V CPU with its software and hardware ecosystems from UC Berkeley to the rest of the world. As a premier member of RISC-V Foundation, RIOS is aiming to demonstrate its commitment to the open source platform for chip developers with far more economical and efficient technology."
+    },
+    "team": {
+      "title": "Team",
+      "content": "We have a professional team"
+    },
+    "video": {
+      "title": "Join us now!",
+      "subtitle": "We are looking for you!",
+      "button": "Join"
+    },
+    "sponsor": {
+      "title": "Our Sponsors"
+    }
+  },
+  "team": {
+    "title": "Specialists & Professors",
+    "subtitle": "We are professional team",
+    "list": {
+      "research": "Research Interests"
+    },
+    "detail": {
+      "research": "Research Interests",
+      "education": "Education",
+      "contact": "Contact",
+      "pubs": "Selected Publications",
+      "awards": "Awards, Memberships and Fellowships"
+    }
+  }
+}

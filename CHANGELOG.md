@@ -4,6 +4,16 @@ Change history of RIOS-Lab Homepage frontend projec.
 
 ## [Unreleased]
 
+## [0.2.0] - 2022-06-03
+
+### Added
+
+- i18n support
+
+### Changed
+
+- Using i18n translation replacing static assets
+
 ## [0.1.3] - 2022-06-01
 
 ### Added
