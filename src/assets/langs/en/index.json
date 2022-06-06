@@ -1,4 +1,7 @@
 {
+  "common": {
+    "seemore": "See more"
+  },
   "navbar": {
     "intro": "Lab Overview",
     "education": "Education",

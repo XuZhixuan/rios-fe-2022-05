@@ -1,4 +1,7 @@
 {
+  "common": {
+    "seemore": "详细了解"
+  },
   "navbar": {
     "intro": "实验室概况",
     "education": "教育教学",

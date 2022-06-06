@@ -4,9 +4,15 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    lang: 'zh'
+  },
   getters: {},
-  mutations: {},
+  mutations: {
+    changeLocale(state, locale) {
+      state.lang = locale;
+    }
+  },
   actions: {},
   modules: {}
 });

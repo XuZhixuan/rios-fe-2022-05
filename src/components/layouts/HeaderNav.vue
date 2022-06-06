@@ -13,16 +13,16 @@
         </b-navbar-toggle>
         <b-collapse id="header-nav" is-nav>
           <b-navbar-nav class="m-auto">
-            <b-nav-item href="/">{{ $t('navbar.intro') }}</b-nav-item>
+            <b-nav-item to="/">{{ $t('navbar.intro') }}</b-nav-item>
             <b-nav-item to="team">{{ $t('navbar.education') }}</b-nav-item>
-            <b-nav-item href="/">{{ $t('navbar.research') }}</b-nav-item>
-            <b-nav-item href="/">{{ $t('navbar.admission') }}</b-nav-item>
-            <b-nav-item href="/">{{ $t('navbar.cooperate') }}</b-nav-item>
+            <b-nav-item to="/">{{ $t('navbar.research') }}</b-nav-item>
+            <b-nav-item to="/">{{ $t('navbar.admission') }}</b-nav-item>
+            <b-nav-item to="/">{{ $t('navbar.cooperate') }}</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
             <b-nav-item-dropdown :text="$t('navbar.lang')" right>
-              <b-dropdown-item @click="changeLocale('ZH')">中文-简体</b-dropdown-item>
-              <b-dropdown-item @click="changeLocale('EN')">English</b-dropdown-item>
+              <b-dropdown-item @click="changeLocale('zh')">中文-简体</b-dropdown-item>
+              <b-dropdown-item @click="changeLocale('en')">English</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>

@@ -4,10 +4,11 @@ import VueI18n from 'vue-i18n';
 Vue.use(VueI18n);
 
 const i18n = new VueI18n({
-  locale: 'ZH',
+  locale: 'en',
+  fallbackLocale: 'en',
   messages: {
-    ZH: require('@/assets/langs/zh/index.json'),
-    EN: require('@/assets/langs/en/index.json')
+    zh: require('@/assets/langs/zh/index.json'),
+    en: require('@/assets/langs/en/index.json')
   }
 });
 

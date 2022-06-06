@@ -3,57 +3,43 @@
     <b-container>
       <h5>{{ $t('home.team.title') }}</h5>
       <p>{{ $t('home.team.content') }}</p>
-      <b-card-group deck>
-        <teacher-card
+      <b-card-group deck style="text-align: center">
+        <b-card
           v-for="teacher in teachers"
-          :name="teacher.name"
-          :img="teacher.img"
-          :detail="teacher.detail"
           :key="teacher.id"
-          :id="teacher.id"
-        />
+          bg-variant="dark"
+          :title="teacher.name"
+          :img-src="imgs[teacher.id]"
+          img-alt="照片"
+          img-top
+        >
+          <b-card-text>
+            {{ teacher.position }}
+          </b-card-text>
+          <b-button variant="outline-light" :to="'/team/' + teacher.id"> {{ $t('common.seemore') }} </b-button>
+        </b-card>
       </b-card-group>
     </b-container>
   </div>
 </template>
 
 <script>
-import TeacherCard from '@/components/home/TeacherCard';
-
 export default {
   name: 'TeachersBrief',
-  components: {
-    TeacherCard
-  },
   data() {
     return {
-      teachers: [
-        {
-          name: '大卫·帕特森',
-          img: 'https://2018.wicwuzhen.cn/web18/news/speeches/201811/W020181107396809372839.png',
-          detail: '实验室主任',
-          id: 0
-        },
-        {
-          name: '谭章熹',
-          img: 'https://rioslab.org/files/image/20200512/20200512172047_60250.png',
-          detail: '实验室常任主任兼委员会主席',
-          id: 1
-        },
-        {
-          name: '谭章熹',
-          img: 'https://rioslab.org/files/image/20200512/20200512172047_60250.png',
-          detail: '实验室常任主任兼委员会主席',
-          id: 2
-        },
-        {
-          name: '谭章熹',
-          img: 'https://rioslab.org/files/image/20200512/20200512172047_60250.png',
-          detail: '实验室常任主任兼委员会主席',
-          id: 3
-        }
+      imgs: [
+        'https://2018.wicwuzhen.cn/web18/news/speeches/201811/W020181107396809372839.png',
+        require('@/assets/pictures/team1.jpeg'),
+        'http://www.ime.cas.cn/sourcedb_ime_cas/zw/zjrck/201611/P020201210374247385586.jpg'
       ]
     };
+  },
+  computed: {
+    teachers() {
+      let locale = this.$i18n.locale;
+      return require('@/assets/langs/' + locale + '/team_brief.json');
+    }
   }
 };
 </script>

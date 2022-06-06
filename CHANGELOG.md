@@ -4,6 +4,16 @@ Change history of RIOS-Lab Homepage frontend projec.
 
 ## [Unreleased]
 
+## [0.2.1] - 2022-06-06
+
+### Added
+
+- Language support for teacher brief component without i18n
+
+### Changed
+
+- Remove TeacherCard component
+
 ## [0.2.0] - 2022-06-02
 
 ### Added

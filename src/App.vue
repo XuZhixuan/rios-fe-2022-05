@@ -2,9 +2,6 @@
   <div id="app">
     <header-nav />
     <router-view />
-    <hr />
-    <h5 style="text-align: center"><font-awesome-icon icon="paint-roller" /> Constructing...</h5>
-    <hr />
     <footer-nav />
   </div>
 </template>
