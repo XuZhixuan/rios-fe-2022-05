@@ -25,35 +25,36 @@ export default {
       team: [
         {
           id: 0,
-          name: '大卫·帕特森',
-          img: 'https://2018.wicwuzhen.cn/web18/news/speeches/201811/W020181107396809372839.png',
+          name: 'David Passterson',
+          img: require('@/assets/pictures/team0.jpeg'),
           info: {
-            position: '实验室主任',
+            position: 'Director',
             brief:
-              '大卫·帕特森（David Patterson）自1976年加州大学洛杉矶分校博士毕业后加入加大伯克利分校计算机系，担任该校巴地计算机科学荣誉教授。帕特森教授在2016年以杰出工程师加入谷歌， 同时担任RISC-V基金会董事会副主席。帕特森教授于过去44年职业生涯里在研究，教学，和服务领域共获颁奖项约40个，其中包括：A.M 图灵奖，C&C奖，IEEE约翰.冯.罗伊曼奖章，并当选为AAAS学会，美国国家工程院，美国国家科学院，硅谷工程名人堂，以及计算机历史博物馆的院士。帕特森教授也曾担任加州大学伯克利分校计算机科学系主任，计算研究协会主席和ACM主席。2019年，他作为发起人之一，出任清华大学清华-伯克利深圳学院大卫帕特森RISC-V国际开源实验室主任。',
-            research: 'RISC，计算机体系结构，计算机网络'
+              'David Patterson is the Pardee Professor of Computer Science, Emeritus at the University of California at Berkeley, which he joined after graduating from UCLA in 1976. He joined Google in 2016. He is currently Vice-Chair of the Board of Directors of the RISC-V Foundation. Professor Patterson has received about 40 awards in the fields of research, teaching, and service in the past 40 years, including: A.M. Turing Award, C&C Award, IEEE John von Reumann Medal. He was also elected to both AAAS societies, the National Academy of Engineering, the National Academy of Sciences, the Silicon Valley Engineering Hall of Fame, and to be a Fellow of the Computer History Museum. In 2019, as one of the initiators, he served as the director of the David Patterson RISC-V International Open Source Laboratory of Tsinghua-Berkeley Shenzhen Institude of Tsinghua University.',
+            research:
+              'Computer Architecture & Engineering (ARC), Computer Architecture and Systems: performance, security, RISC-V'
           }
         },
         {
           id: 1,
-          name: '谭章熹',
-          img: 'https://www.rioslab.org/files/image/20200516/20200516170903_21113.png',
+          name: 'Zhangxi Tan',
+          img: require('@/assets/pictures/team1.jpeg'),
           info: {
-            position: '实验室联合主任兼执行主任',
-            brief:
-              '谭章熹博士是清华-伯克利深圳学院下RIOS图灵奖实验室联合主任，身兼该学院的兼职教授，专长为计算机系统结构和 VLSI设计。在任聘以上职位前，谭章熹博士曾就职于Pure Storage，并成功领导团队交付了获奖产品 （2017 AIconics AI硬件最佳发明奖）- FlashBladeTM，使其从初期成长为带动数亿美元年收入的产品。主要客户包括 Tesla, 奔驰一级方程式赛车车队, 以及Riot Games。谭章熹博士在闪存和硬件加速器研发方面已拥有20多项美国专利，他也是开源SPARC处理器 (RAMP Gold) 的研发人。谭博士拥有清华大学电子工程系学士和硕士学位，加州大学伯克利分校计算机科学硕士和博士学位，师从以研发精简指令集计算机授勋2017年度图灵奖的大卫·帕特森教授。',
-            research: 'RISC，计算机体系结构。'
+            position: 'Co-Director',
+            brief: '',
+            research: ''
           }
         },
         {
           id: 2,
-          name: '陈巍巍',
-          img: 'http://www.ime.cas.cn/sourcedb_ime_cas/zw/zjrck/201611/P020201210374247385586.jpg',
+          name: 'Weiwei Chen',
+          img: require('@/assets/pictures/team2.jpeg'),
           info: {
-            position: '实验室教授，高级工程师',
+            position: 'Professor, Engineer',
             brief:
-              '陈巍巍博士拥有清华大学电子工程系学士、清华大学电子学硕士和中科院博士学位，作为技术骨干参与并完成多项国家重大专项，拥有2项美国专利，和50多项国内发明专利。陈博士擅长纳米集成电路设计和高速存储器设计，并对EDA等领域颇有涉猎。',
-            research: '集成电路设计，EDA,AI芯片'
+              'Associate professor, supervisor of postgraduate, former member of Youth Innovation Promotion Association of Chinese Academy of Sciences Senior member of the Optical Engineering Society of China,expert of the Zhongguancun Cloud Computing Industry Alliance Former chief scientist of artificial intelligence company (CTO level), and former first leader of the 3D NAND chip design team of China. 20+ years of IC industry experience, 7+ years of AI industry experience, led the team to complete 30+ chip/IP core design, served as the technical leader of 5+ National Major Projects, and supervised 30+ students. 70+ Patents(CN and US), software copyrights and articles.',
+            research:
+              'Main research interests for computing in memory chip architecture and design technology, AI chip design nano-memory IC design methodology, and EDA design methodology'
           }
         }
       ]

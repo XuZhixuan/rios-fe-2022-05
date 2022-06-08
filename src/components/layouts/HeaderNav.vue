@@ -13,15 +13,19 @@
         </b-navbar-toggle>
         <b-collapse id="header-nav" is-nav>
           <b-navbar-nav class="m-auto">
-            <b-nav-item to="/">{{ $t('navbar.intro') }}</b-nav-item>
-            <b-nav-item to="team">{{ $t('navbar.education') }}</b-nav-item>
-            <b-nav-item to="/">{{ $t('navbar.research') }}</b-nav-item>
-            <b-nav-item to="/">{{ $t('navbar.admission') }}</b-nav-item>
-            <b-nav-item to="/">{{ $t('navbar.cooperate') }}</b-nav-item>
+            <b-nav-item href="https://rioslab.org">{{ $t('navbar.intro') }}</b-nav-item>
+            <b-nav-item-dropdown :text="$t('navbar.education')">
+              <b-nav-item to="team">{{ $t('navbar.faculty') }}</b-nav-item>
+              <b-nav-item href="https://rioslab.org/students.php">{{ $t('navbar.retrate') }}</b-nav-item>
+            </b-nav-item-dropdown>
+            <b-nav-item href="https://rioslab.org/news.php">{{ $t('navbar.research') }}</b-nav-item>
+            <b-nav-item href="https://www.sigs.tsinghua.edu.cn/zsjy/list.htm">{{ $t('navbar.admission') }}</b-nav-item>
+            <b-nav-item href="https://rioslab.org/contact.php">{{ $t('navbar.cooperate') }}</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item-dropdown :text="$t('navbar.lang')" right>
-              <b-dropdown-item @click="changeLocale('zh')">中文-简体</b-dropdown-item>
+            <b-nav-item-dropdown right>
+              <template #button-content> <font-awesome-icon icon="language" /> {{ $t('navbar.lang') }} </template>
+              <b-dropdown-item @click="changeLocale('zh')">简体中文</b-dropdown-item>
               <b-dropdown-item @click="changeLocale('en')">English</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
@@ -50,9 +54,5 @@ img {
   width: 100%;
   height: auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 30%);
-}
-
-.nav-link {
-  color: #252525 !important;
 }
 </style>

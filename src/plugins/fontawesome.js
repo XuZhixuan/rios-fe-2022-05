@@ -10,9 +10,21 @@ import {
   faAngleDown,
   faAngleRight,
   faLink,
-  faPaintRoller
+  faPaintRoller,
+  faLanguage,
+  faCopyright
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add([faHouse, faEnvelope, faAngleUp, faAngleDown, faAngleRight, faLink, faPaintRoller]);
+library.add([
+  faHouse,
+  faEnvelope,
+  faAngleUp,
+  faAngleDown,
+  faAngleRight,
+  faLink,
+  faPaintRoller,
+  faLanguage,
+  faCopyright
+]);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);

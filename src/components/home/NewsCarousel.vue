@@ -27,26 +27,26 @@ export default {
         {
           id: 0,
           img: 'https://rioslab.org/files/image/20200415/20200415101412_98915.png',
-          title: 'A title',
-          detail: 'Some detailed information here...',
-          linkName: '让我康康',
-          link: '/'
+          title: "What's New!",
+          detail: 'Something new is happening...',
+          linkName: 'See More',
+          link: 'https://rioslab.org/news.php'
         },
         {
           id: 1,
           img: 'https://rioslab.org/files/image/20200508/20200508093828_68679.png',
-          title: 'Another title',
-          detail: 'Some detailed information here...',
-          linkName: '查看详情',
-          link: '/'
+          title: 'Join Us Today!',
+          detail: 'Welcome to RIOS, becoming a member today!',
+          linkName: 'Details',
+          link: 'https://rioslab.org/contact.php'
         },
         {
           id: 2,
           img: 'https://rioslab.org/files/image/20200427/20200427211729_44757.png',
-          title: 'Yet another title',
-          detail: 'Some detailed information here...',
-          linkName: '立即加入',
-          link: '/'
+          title: 'We Are Hiring!',
+          detail: 'Contact us immediately.',
+          linkName: 'Contact',
+          link: 'https://rioslab.org/contact.php'
         }
       ]
     };

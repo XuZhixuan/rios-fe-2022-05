@@ -11,27 +11,19 @@
         <p>{{ info.brief }}</p>
         <h6>{{ $t('team.detail.research') }}</h6>
         <p>{{ info.research }}</p>
-        <h6>{{ $t('team.detail.education') }}</h6>
-        <ul class="edu-list">
-          <li v-for="edu in education" :key="edu.id">{{ edu.content }}</li>
-        </ul>
         <h6>{{ $t('team.detail.contact') }}</h6>
         <font-awesome-icon icon="envelope" /> <a :href="'mailto:' + email">Mailto:{{ email }}</a>
         <br />
-        <font-awesome-icon icon="link" /> <a :href="link">{{ link }}</a>
+        <font-awesome-icon v-if="link" icon="link" /> <a :href="link">{{ link }}</a>
       </b-col>
     </b-row>
-    <div class="pubs">
-      <h5>{{ $t('team.detail.pubs') }}</h5>
-      <b-list-group flush>
-        <b-list-group-item v-for="pub in pubs" :key="pub.id">
-          <span v-html="pub.content"></span>
-        </b-list-group-item>
-      </b-list-group>
-    </div>
-    <div class="awards">
-      <h5>{{ $t('team.detail.awards') }}</h5>
-      <span v-html="awards"></span>
+    <div class="custom-area">
+      <h5>{{ $t('team.detail.education') }}</h5>
+      <hr />
+      <ul class="edu-list">
+        <li v-for="(edu, i) in education" :key="i">{{ edu }}</li>
+      </ul>
+      <span v-html="custom"></span>
     </div>
   </div>
 </template>
@@ -52,111 +44,73 @@ export default {
         research: null
       },
       education: [],
-      pubs: [],
-      awards: []
+      custom: ''
     };
   },
   methods: {
     getData() {
       let dataset = [
         {
-          name: '大卫·帕特森',
-          img: 'https://2018.wicwuzhen.cn/web18/news/speeches/201811/W020181107396809372839.png',
+          name: 'David Patterson',
+          img: require('@/assets/pictures/team0.jpeg'),
           info: {
-            position: '实验室主任',
+            position: 'Director',
             brief:
-              '大卫·帕特森（David Patterson）自1976年加州大学洛杉矶分校博士毕业后加入加大伯克利分校计算机系，担任该校巴地计算机科学荣誉教授。帕特森教授在2016年以杰出工程师加入谷歌， 同时担任RISC-V基金会董事会副主席。帕特森教授于过去44年职业生涯里在研究，教学，和服务领域共获颁奖项约40个，其中包括：A.M 图灵奖，C&C奖，IEEE约翰.冯.罗伊曼奖章，并当选为AAAS学会，美国国家工程院，美国国家科学院，硅谷工程名人堂，以及计算机历史博物馆的院士。帕特森教授也曾担任加州大学伯克利分校计算机科学系主任，计算研究协会主席和ACM主席。2019年，他作为发起人之一，出任清华大学清华-伯克利深圳学院大卫帕特森RISC-V国际开源实验室主任。',
-            research: 'RISC，计算机体系结构，计算机网络'
+              'David Patterson is the Pardee Professor of Computer Science, Emeritus at the University of California at Berkeley, which he joined after graduating from UCLA in 1976. He joined Google in 2016. He is currently Vice-Chair of the Board of Directors of the RISC-V Foundation. Professor Patterson has received about 40 awards in the fields of research, teaching, and service in the past 40 years, including: A.M. Turing Award, C&C Award, IEEE John von Reumann Medal. He was also elected to both AAAS societies, the National Academy of Engineering, the National Academy of Sciences, the Silicon Valley Engineering Hall of Fame, and to be a Fellow of the Computer History Museum. In 2019, as one of the initiators, he served as the director of the David Patterson RISC-V International Open Source Laboratory of Tsinghua-Berkeley Shenzhen Institude of Tsinghua University.',
+            research:
+              'Computer Architecture & Engineering, Computer Architecture and Systems: performance, security, RISC-V'
           },
-          education: [
-            { id: 0, content: '1976, PhD, Computer Science, UCLA' },
-            { id: 0, content: '1970, MS, Computer Science, UCLA' },
-            { id: 0, content: '1969, AB, Mathematics, UCLA' }
-          ],
-          pubs: [
-            {
-              id: 0,
-              content:
-                'N. P. Jouppi, D. Yoon, G. Kurian, S. Li, N. Patil, J. Laudon, C. Young, and D. A. Patterson, "A Domain-Specific Supercomputer for Training Deep Neural Networks," <em>Communications of the ACM</em>, vol. 63, no. in press, 2020.'
-            },
-            {
-              id: 1,
-              content:
-                'J. L. Hennessy and D. A. Patterson, "<a href="https://cacm.acm.org/magazines/2019/2/234352-a-new-golden-age-for-computer-architecture/fulltext">A new golden age for computer architecture.</a>," <em>Commun. ACM</em>, vol. 62, no. 2, pp. 48--60, Feb. 2019.'
-            },
-            {
-              id: 3,
-              content:
-                'N. P. Jouppi, C. Young, N. Patil, D. A. Patterson, G. Agrawal, R. Bajwa, S. Bates, S. Bhatia, N. Boden, A. Borchers, and  et al, "In-datacenter performance analysis of a tensor processing unit," in <em>2017 ACM/IEEE 44th Annual International Symposium on Computer Architecture (ISCA)</em>, 2017, pp. 1--12.'
-            }
-          ],
-          awards:
-            '\
-      <ul>\
-        <li>\
-          <a href="/Faculty/Awards/government.html#594">NAI Charles Stark Draper Prize for Engineering</a>, 2022\
-        </li>\
-        <li>\
-          <a href="/Faculty/Awards/other.html#227">Frontiers of Knowledge Award in Information and Communication Technologies</a>, 2020\
-        </li>\
-        <li>\
-          <a href="/Faculty/Awards/society.html#513">Textbook Excellence Award ("Texty")</a>, 2019\
-         </li>\
-      </ul>',
           email: 'pattrsn@cs.berkeley.edu',
-          link: 'https://www2.eecs.berkeley.edu/Faculty/Homepages/patterson.html'
+          link: 'https://www2.eecs.berkeley.edu/Faculty/Homepages/patterson.html',
+          education: [
+            '1976, PhD, Computer Science, UCLA',
+            '1970, MS, Computer Science, UCLA',
+            '1969, AB, Mathematics, UCLA'
+          ],
+          custom: require('@/assets/temp/0.json')
         },
         {
-          name: '谭章熹',
-          img: 'https://rioslab.org/files/image/20200512/20200512172047_60250.png',
+          name: 'Zhangxi Tan',
+          img: require('@/assets/pictures/team1.jpeg'),
           info: {
-            position: '实验室常任主任兼委员会主席',
+            position: 'Co-Director',
             brief:
-              '谭章熹博士是清华-伯克利深圳学院下RIOS图灵奖实验室联合主任，身兼该学院的兼职教授，专长为计算机系统结构和 VLSI设计。在任聘以上职位前，谭章熹博士曾就职于Pure Storage，并成功领导团队交付了获奖产品 （2017 AIconics AI硬件最佳发明奖）- FlashBladeTM，使其从初期成长为带动数亿美元年收入的产品。主要客户包括 Tesla, 奔驰一级方程式赛车车队, 以及Riot Games。谭章熹博士在闪存和硬件加速器研发方面已拥有20多项美国专利，他也是开源SPARC处理器 (RAMP Gold) 的研发人。谭博士拥有清华大学电子工程系学士和硕士学位，加州大学伯克利分校计算机科学硕士和博士学位，师从以研发精简指令集计算机授勋2017年度图灵奖的大卫·帕特森教授。',
-            research: 'RISC，计算机体系结构'
+              "Dr. Tan studied computer architecture under the tutelage of Professor David Patterson, the founder of RISC and a Turing Award winner, and is the only student from mainland China who is engaged in computer architecture research.. As a member of the RISC-V original project team, Dr. Tan participated in the research and development and global promotion of the RISC-V instruction set standard throughout the process. During his academic research and practice, Dr. Tan has obtained dozens of US invention patents, and has more than 20 patents on hardware accelerators and flash memory alone. Dr. Tan is also the inventor of the open source SPARC processor (RAMP Gold), the predecessor of the Berkeley RISC-V project. Dr. Tan has published several papers on chip architecture in top academic journals and top conferences in the industry, and has been invited to give academic speeches at top conferences in the world for many times. After graduating from UCB, Dr. Tan joined Pure Storage Corporation (NYSE: PSTG) as a founding engineer, and was its first chip design engineer and the earliest principal design engineer of its key product FlashbladeTM. After that, Dr. Tan founded OURS Technology. In 2018, Dr. Tan turned the focus of chip technology teaching and enterprises back to China, taught at the TBSI and founded RiVAI in Shenzhen. He is committed to building a world-wide complete ecosystem of open source chips with Shenzhen as the center, realizing the independent control of China's chip technology and the incubation of local talents.",
+            research:
+              'Computer architecture and networks, Microprocessor designs, non-volatile memory systems, SW/HW co-design and implementation of computer system with Field Programmable Gate Array (FPGA) and ASIC'
           },
+          email: 'xtan@rioslab.org',
+          link: 'http://www.cs.berkeley.edu/~xtan',
           education: [
-            { id: 0, content: '2013, Computer Science Division, University of California, Berkeley, CA 94720' },
-            { id: 1, content: '2013, PhD, Computer Science Division, University of California, Berkeley, CA 94720' },
-            { id: 2, content: '2005, MS, Department of Computer Science and Technology,Tsinghua University, China' },
-            { id: 3, content: '2002, AB, Department of Electronic Engineering,Tsinghua University, China' }
+            '2013, Computer Science Division, University of California, Berkeley, CA 94720',
+            '2013, PhD, Computer Science Division, University of California, Berkeley, CA 94720',
+            '2005, MS, Department of Computer Science and Technology,Tsinghua University, China',
+            '2002, AB, Department of Electronic Engineering,Tsinghua University, China'
           ],
-          pubs: [
-            {
-              id: 0,
-              content:
-                'Zhangxi Tan, Zhenghao Qian, Xi Chen, Krste Asanovic, David Patterson, "DIABLO: A Warehouse-Scale Computer Network Simulator using FPGAs", 20th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS-2015), Istanbul, Turkey, March 2015'
-            },
-            {
-              id: 1,
-              content:
-                'Zhangxi Tan, Andrew Waterman, Henry Cook, Sarah Bird, Krste Asanovic, David Patterson, "A Case for FAME: FPGA Architecture Model Execution", International Symposium on Computer Architecture (ISCA-2010), Saint-Malo, France, June 2010'
-            },
-            {
-              id: 3,
-              content:
-                'Zhangxi Tan, Andrew Waterman, Rimas Avizienis, Yunsup Lee, Henry Cook, David Patterson, Krste Asanovic, "RAMP Gold: An FPGA-based Architecture Simulator for Multiprocessors", in 47th Design Automation Conference (DAC\'10), Anaheim, CA, June 2010'
-            }
+          custom: require('@/assets/temp/1.json')
+        },
+        {
+          name: 'Weiwei Chen',
+          img: require('@/assets/pictures/team2.jpeg'),
+          info: {
+            position: 'Professor, Engineer',
+            brief:
+              'Associate professor, supervisor of postgraduate, former member of Youth Innovation Promotion Association of Chinese Academy of Sciences Senior member of the Optical Engineering Society of China,expert of the Zhongguancun Cloud Computing Industry Alliance Former chief scientist of artificial intelligence company (CTO level), and former first leader of the 3D NAND chip design team of China. 20+ years of IC industry experience, 7+ years of AI industry experience, led the team to complete 30+ chip/IP core design, served as the technical leader of 5+ National Major Projects, and supervised 30+ students. 70+ Patents(CN and US), software copyrights and articles.',
+            research:
+              'Main research interests for computing in memory chip architecture and design technology, AI chip design nano-memory IC design methodology, and EDA design methodology'
+          },
+          email: 'weiw.chen@rioslab.org',
+          link: null,
+          education: [
+            'PhD in Microelectronics, University of Chinese Academy of Sciences, Institute of Microelectronics',
+            'M.S. in Microelectronics, Tsinghua University, Institute of Microelectronics',
+            'Bachelor of Electronic Science and Technology, Department of Electronics Engineering, Tsinghua University'
           ],
-          awards:
-            '\
-      <ul>\
-        <li>\
-          <a href="/Faculty/Awards/government.html#594">NAI Charles Stark Draper Prize for Engineering</a>, 2022\
-        </li>\
-        <li>\
-          <a href="/Faculty/Awards/other.html#227">Frontiers of Knowledge Award in Information and Communication Technologies</a>, 2020\
-        </li>\
-        <li>\
-          <a href="/Faculty/Awards/society.html#513">Textbook Excellence Award ("Texty")</a>, 2019\
-         </li>\
-      </ul>',
-          email: 'pattrsn@cs.berkeley.edu',
-          link: 'https://www2.eecs.berkeley.edu/Faculty/Homepages/patterson.html'
+          custom: require('@/assets/temp/2.json')
         }
       ];
 
-      let data = dataset[this.id > 0 ? 1 : 0];
+      let data = dataset[this.id];
 
       this.name = data.name;
       this.img = data.img;
@@ -166,8 +120,7 @@ export default {
       this.info.brief = data.info.brief;
       this.info.research = data.info.research;
       this.education = data.education;
-      this.pubs = data.pubs;
-      this.awards = data.awards;
+      this.custom = data.custom;
     }
   },
   mounted() {
@@ -183,17 +136,15 @@ export default {
 
 .edu-list {
   list-style: none;
-  padding-left: 2rem;
-}
-
-.pubs,
-.awards {
-  margin-top: 1.5rem;
+  padding-left: 1rem;
 }
 
 p {
-  text-indent: 2rem;
   text-align: justify;
   line-height: 1.5rem;
+}
+
+.custom-area {
+  margin-top: 3rem;
 }
 </style>

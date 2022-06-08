@@ -3,7 +3,7 @@
     <news-carousel />
     <lab-intro />
     <teachers-brief />
-    <lab-video />
+    <lab-video v-if="hasVideo" />
     <sponsors-list />
   </div>
 </template>
@@ -23,6 +23,11 @@ export default {
     TeachersBrief,
     LabVideo,
     SponsorsList
+  },
+  data() {
+    return {
+      hasVideo: false
+    };
   }
 };
 </script>

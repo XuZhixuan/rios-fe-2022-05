@@ -7,9 +7,12 @@
       <b-col md="8" align-self="center">
         <b-card-body :title="name">
           <b-card-sub-title style="font-weight: bold"> {{ info.position }} </b-card-sub-title>
-          <b-card-text align="justify"> {{ info.brief }} </b-card-text>
+          <b-card-text align="justify">
+            <br />
+            {{ info.brief }}
+          </b-card-text>
           <b-card-sub-title>{{ $t('team.list.research') }}</b-card-sub-title>
-          <b-card-text> {{ info.research }} </b-card-text>
+          <b-card-text align="justify"> {{ info.research }} </b-card-text>
         </b-card-body>
       </b-col>
     </b-row>

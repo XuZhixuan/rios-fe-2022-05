@@ -1,10 +1,10 @@
 <template>
   <div class="sponsor-area">
     <b-container>
-      <h5 style="text-align: center">{{ $t('home.sponsor.title') }}</h5>
-      <b-row>
-        <b-col md="3" v-for="sponsor in sponsors" :key="sponsor.id">
-          <b-img :src="sponsor.logo" style="width: 100%" />
+      <h5 style="text-align: center; margin-bottom: 3rem">{{ $t('home.sponsor.title') }}</h5>
+      <b-row align-h="center">
+        <b-col md="3" v-for="(sponsor, id) in sponsors" :key="id" class="sponsor-logo">
+          <b-img :src="sponsor" style="max-width: 100%" />
         </b-col>
       </b-row>
     </b-container>
@@ -17,19 +17,13 @@ export default {
   data() {
     return {
       sponsors: [
-        { id: 0, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 1, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 2, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 3, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 4, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 5, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 6, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 7, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 8, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 9, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 10, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 11, logo: require('@/assets/logos/sponsor1.svg') },
-        { id: 12, logo: require('@/assets/logos/sponsor1.svg') }
+        require('@/assets/pictures/logo_bd.png'),
+        require('@/assets/pictures/logo_sc.png'),
+        require('@/assets/pictures/logo_adi.png'),
+        require('@/assets/pictures/logo_img.svg'),
+        require('@/assets/pictures/logo_fw.png'),
+        require('@/assets/pictures/logo_ansys.svg'),
+        require('@/assets/pictures/logo_rivai.png')
       ]
     };
   }
@@ -43,5 +37,13 @@ export default {
   background-position: center;
   background-size: 100% auto;
   color: #fff;
+}
+
+.sponsor-logo {
+  min-height: 10rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

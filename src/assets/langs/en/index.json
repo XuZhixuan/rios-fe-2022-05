@@ -5,10 +5,12 @@
   "navbar": {
     "intro": "Lab Overview",
     "education": "Education",
+    "faculty": "Faculty",
+    "retrate": "Retrate",
     "research": "Research",
     "admission": "Admission",
     "cooperate": "Coperation",
-    "lang": "Lang"
+    "lang": "English"
   },
   "footer": {
     "sitemap": {
@@ -40,7 +42,7 @@
       "button": "Join"
     },
     "sponsor": {
-      "title": "Our Sponsors"
+      "title": "Cooperative Partner"
     }
   },
   "team": {

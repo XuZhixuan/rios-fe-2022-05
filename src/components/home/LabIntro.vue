@@ -4,7 +4,7 @@
       <b-row>
         <b-col lg>
           <h5 style="align: center">{{ $t('home.intro.title') }}</h5>
-          <p style="text-indent: 2rem; text-align: adjust">
+          <p style="text-align: justify">
             {{ $t('home.intro.content') }}
           </p>
           <b-row>
@@ -18,7 +18,7 @@
         </b-col>
         <b-col lg>
           <div class="pic">
-            <b-img rounded src="@/assets/pictures/temp_intro.png" fluid></b-img>
+            <b-img rounded src="@/assets/pictures/intro.jpg" fluid></b-img>
           </div>
         </b-col>
       </b-row>

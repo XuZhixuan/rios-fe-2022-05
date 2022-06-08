@@ -4,6 +4,19 @@ Change history of RIOS-Lab Homepage frontend projec.
 
 ## [Unreleased]
 
+## [0.2.2] - 2022-06-08
+
+### Added
+
+- Some new pictures.
+- Static content in homepage.
+- Static faculty details.
+
+### Changed
+
+- Remove unused placeholding pics.
+- Replace Avatar with high-re pics.
+
 ## [0.2.1] - 2022-06-06
 
 ### Added

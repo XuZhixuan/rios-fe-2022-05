@@ -5,10 +5,12 @@
   "navbar": {
     "intro": "实验室概况",
     "education": "教育教学",
+    "faculty": "师资力量",
+    "retrate": "学术活动",
     "research": "科学研究",
     "admission": "招生就业",
     "cooperate": "合作交流",
-    "lang": "语言"
+    "lang": "简体中文"
   },
   "footer": {
     "sitemap": {

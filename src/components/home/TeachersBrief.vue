@@ -29,9 +29,9 @@ export default {
   data() {
     return {
       imgs: [
-        'https://2018.wicwuzhen.cn/web18/news/speeches/201811/W020181107396809372839.png',
+        require('@/assets/pictures/team0.jpeg'),
         require('@/assets/pictures/team1.jpeg'),
-        'http://www.ime.cas.cn/sourcedb_ime_cas/zw/zjrck/201611/P020201210374247385586.jpg'
+        require('@/assets/pictures/team2.jpeg')
       ]
     };
   },

@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container style="width=100%">
     <teacher-detail :id="id" />
   </b-container>
 </template>
