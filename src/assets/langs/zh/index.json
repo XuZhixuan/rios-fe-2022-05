@@ -1,6 +1,7 @@
 {
   "common": {
-    "seemore": "详细了解"
+    "seemore": "详细了解",
+    "details": "查看详情"
   },
   "navbar": {
     "intro": "实验室概况",

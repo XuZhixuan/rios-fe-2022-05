@@ -14,8 +14,8 @@
           <b-card-sub-title>{{ $t('team.list.research') }}</b-card-sub-title>
           <b-card-text align="justify"> {{ info.research }} </b-card-text>
           <b-link :to="{ name: 'teamDetail', params: { id: id } }">
-            <font-awesome-icon icon="angle-right" /> See details</b-link
-          >
+            <font-awesome-icon icon="angle-right" /> {{ $t('common.details') }}
+          </b-link>
         </b-card-body>
       </b-col>
     </b-row>

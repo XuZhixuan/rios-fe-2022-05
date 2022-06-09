@@ -1,6 +1,7 @@
 {
   "common": {
-    "seemore": "See more"
+    "seemore": "See more",
+    "details": "Details"
   },
   "navbar": {
     "intro": "Overview",
