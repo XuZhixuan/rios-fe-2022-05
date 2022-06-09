@@ -26,19 +26,19 @@ export default {
         {
           id: 0,
           name: 'David Passterson',
-          img: require('@/assets/pictures/team0.jpeg'),
+          img: require('@/assets/pictures/avatar0.jpeg'),
           info: {
             position: 'Director',
             brief:
               'David Patterson is the Pardee Professor of Computer Science, Emeritus at the University of California at Berkeley, which he joined after graduating from UCLA in 1976. He joined Google in 2016. He is currently Vice-Chair of the Board of Directors of the RISC-V Foundation. Professor Patterson has received about 40 awards in the fields of research, teaching, and service in the past 40 years, including: A.M. Turing Award, C&C Award, IEEE John von Reumann Medal. He was also elected to both AAAS societies, the National Academy of Engineering, the National Academy of Sciences, the Silicon Valley Engineering Hall of Fame, and to be a Fellow of the Computer History Museum. In 2019, as one of the initiators, he served as the director of the David Patterson RISC-V International Open Source Laboratory of Tsinghua-Berkeley Shenzhen Institude of Tsinghua University.',
             research:
-              'Computer Architecture & Engineering (ARC), Computer Architecture and Systems: performance, security, RISC-V'
+              'Computer Architecture & Engineering, Computer Architecture and Systems: performance, security, RISC-V'
           }
         },
         {
           id: 1,
           name: 'Zhangxi Tan',
-          img: require('@/assets/pictures/team1.jpeg'),
+          img: require('@/assets/pictures/avatar1.jpeg'),
           info: {
             position: 'Co-Director',
             brief:
@@ -50,7 +50,7 @@ export default {
         {
           id: 2,
           name: 'Weiwei Chen',
-          img: require('@/assets/pictures/team2.jpeg'),
+          img: require('@/assets/pictures/avatar2.jpeg'),
           info: {
             position: 'Professor, Engineer',
             brief:

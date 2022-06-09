@@ -31,9 +31,9 @@ export default {
   data() {
     return {
       imgs: [
-        require('@/assets/pictures/team0.jpeg'),
-        require('@/assets/pictures/team1.jpeg'),
-        require('@/assets/pictures/team2.jpeg')
+        require('@/assets/pictures/avatar0.jpeg'),
+        require('@/assets/pictures/avatar1.jpeg'),
+        require('@/assets/pictures/avatar2.jpeg')
       ]
     };
   },
