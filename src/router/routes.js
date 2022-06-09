@@ -4,6 +4,7 @@ import Team from '@/views/TeamView';
 export default [
   {
     path: '/',
+    name: 'home',
     component: Home
   },
   {
@@ -12,10 +13,12 @@ export default [
     children: [
       {
         path: '',
+        name: 'teamList',
         component: () => import('@/views/team/TeamList')
       },
       {
         path: ':id',
+        name: 'teamDetail',
         component: () => import('@/views/team/TeacherShow'),
         props: true
       }

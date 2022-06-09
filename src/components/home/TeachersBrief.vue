@@ -16,7 +16,9 @@
           <b-card-text>
             {{ teacher.position }}
           </b-card-text>
-          <b-button variant="outline-light" :to="'/team/' + teacher.id"> {{ $t('common.seemore') }} </b-button>
+          <b-button variant="outline-light" :to="{ name: 'teamDetail', params: { id: teacher.id } }">
+            {{ $t('common.seemore') }}
+          </b-button>
         </b-card>
       </b-card-group>
     </b-container>

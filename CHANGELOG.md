@@ -4,6 +4,16 @@ Change history of RIOS-Lab Homepage frontend projec.
 
 ## [Unreleased]
 
+## [0.2.3] - 2022-06-09
+
+### Fixed
+- Link to detail info
+- Some typo
+
+### Changed
+
+- Using programmatic navgation
+
 ## [0.2.2] - 2022-06-08
 
 ### Added

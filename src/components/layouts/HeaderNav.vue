@@ -15,8 +15,8 @@
           <b-navbar-nav class="m-auto">
             <b-nav-item href="https://rioslab.org">{{ $t('navbar.intro') }}</b-nav-item>
             <b-nav-item-dropdown :text="$t('navbar.education')">
-              <b-nav-item to="team">{{ $t('navbar.faculty') }}</b-nav-item>
-              <b-nav-item href="https://rioslab.org/students.php">{{ $t('navbar.retrate') }}</b-nav-item>
+              <b-nav-item to="/home">{{ $t('navbar.faculty') }}</b-nav-item>
+              <b-nav-item href="https://rioslab.org/students.php">{{ $t('navbar.retreats') }}</b-nav-item>
             </b-nav-item-dropdown>
             <b-nav-item href="https://rioslab.org/news.php">{{ $t('navbar.research') }}</b-nav-item>
             <b-nav-item href="https://www.sigs.tsinghua.edu.cn/zsjy/list.htm">{{ $t('navbar.admission') }}</b-nav-item>
