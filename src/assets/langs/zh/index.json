@@ -59,5 +59,10 @@
       "pubs": "研究成果",
       "awards": "奖励奖项"
     }
+  },
+  "projects": {
+    "title": "实验室科研项目",
+    "subtitle": "在 RISC-V 开源项目领域深耕细作",
+    "link": "关于此项目的链接"
   }
 }

@@ -13,14 +13,16 @@
         </b-navbar-toggle>
         <b-collapse id="header-nav" is-nav>
           <b-navbar-nav class="m-auto">
-            <b-nav-item href="https://rioslab.org">{{ $t('navbar.intro') }}</b-nav-item>
+            <b-nav-item href="/">{{ $t('navbar.intro') }}</b-nav-item>
             <b-nav-item-dropdown :text="$t('navbar.education')">
               <b-nav-item to="/team">{{ $t('navbar.faculty') }}</b-nav-item>
-              <b-nav-item href="https://rioslab.org/students.php">{{ $t('navbar.retreats') }}</b-nav-item>
+              <b-nav-item href="https://rioslab.org/students.php?lang_id=2">{{ $t('navbar.retreats') }}</b-nav-item>
             </b-nav-item-dropdown>
-            <b-nav-item href="https://rioslab.org/news.php">{{ $t('navbar.research') }}</b-nav-item>
-            <b-nav-item href="https://www.sigs.tsinghua.edu.cn/zsjy/list.htm">{{ $t('navbar.admission') }}</b-nav-item>
-            <b-nav-item href="https://rioslab.org/contact.php">{{ $t('navbar.cooperate') }}</b-nav-item>
+            <b-nav-item to="/projects">{{ $t('navbar.research') }}</b-nav-item>
+            <b-nav-item href="https://www.sigs.tsinghua.edu.cn/en/2022/0929/c1402a58113/page.htm">{{
+              $t('navbar.admission')
+            }}</b-nav-item>
+            <b-nav-item href="https://rioslab.org/contact.php?lang_id=2">{{ $t('navbar.cooperate') }}</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
             <b-nav-item-dropdown right>

@@ -30,11 +30,7 @@ export default {
   name: 'TeachersBrief',
   data() {
     return {
-      imgs: [
-        require('@/assets/pictures/avatar0.jpeg'),
-        require('@/assets/pictures/avatar1.jpeg'),
-        require('@/assets/pictures/avatar2.jpeg')
-      ]
+      imgs: ['/photos/team/avatar0.jpeg', '/photos/team/avatar1.jpeg', '/photos/team/avatar2.jpeg']
     };
   },
   computed: {
